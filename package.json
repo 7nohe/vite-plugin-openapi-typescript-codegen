@@ -1,0 +1,27 @@
+{
+  "name": "@7nohe/vite-plugin-openapi-typescript-codegen",
+  "version": "0.0.1",
+  "description": "OpenAPI Typescript Codegen for Vite",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "prepublishOnly": "npm run build",
+    "release": "npx git-ensure -a && npx bumpp --commit --tag --push"
+  },
+  "keywords": [],
+  "author": "7nohe",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "@types/node": "^18.0.4",
+    "chokidar": "^3.5.3",
+    "eslint": "^8.19.0",
+    "openapi-typescript-codegen": "^0.23.0",
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0"
+  }
+}
