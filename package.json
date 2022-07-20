@@ -1,6 +1,6 @@
 {
   "name": "@7nohe/vite-plugin-openapi-typescript-codegen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenAPI Typescript Codegen for Vite",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -21,7 +21,15 @@
     "release": "npx git-ensure -a && npx bumpp --commit --tag --push",
     "preview": "tsup src/index.ts --dts --format cjs,esm && npm -C example run dev"
   },
-  "keywords": ["openapi", "typescript", "vite", "node", "yaml", "json", "swagger"],
+  "keywords": [
+    "openapi",
+    "typescript",
+    "vite",
+    "node",
+    "yaml",
+    "json",
+    "swagger"
+  ],
   "author": "7nohe",
   "license": "MIT",
   "peerDependencies": {
