@@ -7,6 +7,10 @@ export default defineConfig({
     openApiTypescriptCodegen({
       input: './petstore.yaml',
       output: './openapi',
+      watch: {
+        interval: 500,
+        disabled: process.env.NODE_ENV === 'production',
+      }
     })
   ],
 });
