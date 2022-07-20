@@ -22,6 +22,10 @@ export default defineConfig({
     openApiTypescriptCodegen({
       input: './petstore.yaml',
       output: './openapi',
+      watch: {
+        interval: 500,
+        disabled: process.env.NODE_ENV === 'production',
+      }
     })
   ],
 });
@@ -33,6 +37,17 @@ This plugin generates TypeScript clients by running `vite`/`vite build`.
 
 It also detects changes in the schema file and regenerates the client files.
 
+
+## Options
+
+| name            | type              | describe                                    |
+| --------------- | ----------------- | ------------------------------------------- |
+| input           | string            | OpenAPI specification file (required)       |
+| output          | string            | Output directory (default: `openapi`)       |
+| watch.interval  | number            | Interval of file watching (default: `1000`) |
+| watch.disabled  | boolean           | Disable file watching (default: `false`)    |
+
+[OpenAPI Typescript Codegen options](https://github.com/ferdikoomen/openapi-typescript-codegen#usage) are also available.
 
 ## License
 
