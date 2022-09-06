@@ -19,6 +19,7 @@
     "build": "tsup src/index.ts --dts --format cjs,esm",
     "prepublishOnly": "pnpm run build",
     "release": "npx git-ensure -a && npx bumpp --commit --tag --push",
+    "lint": "eslint src/**/*.ts",
     "preview": "tsup src/index.ts --dts --format cjs,esm && pnpm --filter @7nohe/example run dev"
   },
   "keywords": [
