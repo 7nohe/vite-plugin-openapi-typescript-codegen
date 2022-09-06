@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "@7nohe/vite-plugin-openapi-typescript-codegen": "workspace:*",
-    "@stoplight/prism-cli": "^4.10.1",
+    "@stoplight/prism-cli": "^4.10.3",
     "npm-run-all": "^4.1.5",
-    "typescript": "^4.5.4",
-    "vite": "^3.0.0"
+    "typescript": "^4.8.2",
+    "vite": "^3.1.0"
   }
 }
