@@ -1,6 +1,6 @@
 {
   "name": "@7nohe/vite-plugin-openapi-typescript-codegen",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "OpenAPI Typescript Codegen for Vite",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
