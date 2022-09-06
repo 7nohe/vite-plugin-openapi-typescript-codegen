@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/7nohe/vite-plugin-openapi-typescript-codegen"
+    "url": "git+https://github.com/7nohe/vite-plugin-openapi-typescript-codegen"
   },
   "homepage": "https://github.com/7nohe/vite-plugin-openapi-typescript-codegen",
   "bugs": "https://github.com/7nohe/vite-plugin-openapi-typescript-codegen/issues",
