@@ -16115,7 +16115,7 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 var import_chokidar = __toESM(require_chokidar());
-function vitePluginOpenapiTypescriptCodegen(options) {
+function openApiTypescriptCodegen(options) {
   var _a, _b, _c;
   const watcher = import_chokidar.default.watch(options.input, {
     ignoreInitial: true,
@@ -16145,7 +16145,7 @@ function vitePluginOpenapiTypescriptCodegen(options) {
     }
   };
 }
-var src_default = vitePluginOpenapiTypescriptCodegen;
+var src_default = openApiTypescriptCodegen;
 /*! Bundled license information:
 
 normalize-path/index.js:

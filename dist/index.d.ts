@@ -9,6 +9,6 @@ interface PluginOptions extends Omit<Options, "output"> {
         disabled?: boolean;
     };
 }
-declare function vitePluginOpenapiTypescriptCodegen(options: PluginOptions): Plugin;
+declare function openApiTypescriptCodegen(options: PluginOptions): Plugin;
 
-export { vitePluginOpenapiTypescriptCodegen as default };
+export { openApiTypescriptCodegen as default };
