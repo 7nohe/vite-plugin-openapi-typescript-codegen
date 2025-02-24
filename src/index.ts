@@ -9,13 +9,13 @@ interface PluginOptions extends Omit<Options, 'output'> {
   watch?: Pick<WatchOptions, 'interval'> & { disabled?: boolean }
 }
 
-function vitePluginOpenapiTypescriptCodegen(options: PluginOptions): Plugin {
+function openApiTypescriptCodegen(options: PluginOptions): Plugin {
   const watcher = chokidar.watch(options.input, {
     ignoreInitial: true,
     interval: options.watch?.interval ?? 1000,
   })
   const openApiOptions: Options = {
-    output: 'openapi',
+    output: options.output ?? 'openapi',
     ...options,
   }
   return {
@@ -42,4 +42,4 @@ function vitePluginOpenapiTypescriptCodegen(options: PluginOptions): Plugin {
   }
 }
 
-export default vitePluginOpenapiTypescriptCodegen
+export default openApiTypescriptCodegen
